@@ -18,23 +18,56 @@ public class Ejemplo01 {
         // TODO code application logic here
         
         
-        String miCiudad = obtenerCiudadMayuscula("Loja");
-        System.out.printf("%s\n", miCiudad);
+       //String miCiudad = obtenerCiudadMayuscula("Loja");
+       // System.out.printf("%s\n", miCiudad);
+       
+       obtenerMultiplicacion(7, 50);
+       
+       String miMensaje = obtenerMultiplicacionDos(7,50);
+        System.out.printf("%s\n", miMensaje);
     }
     
+    public static void obtenerMultiplicacion(int tabla, int limite){
+        int mult = 1;
+        int resp;
+        while (mult <= limite) {
+            resp = tabla * mult;
+            System.out.printf("%d x %d = %d\n", tabla, mult, resp);
+            mult++;
+        }
+        
+    }
     
-    public String obtenerCiudadMayuscula(String m){
+    public static String obtenerMultiplicacionDos(int tabla, int limite) {
+        int mult = 1;
+        int resp;
+        String cadena = "";
+        while (mult <= limite) {
+            resp = tabla * mult;
+            cadena = String.format("%s%d x %d = %d\n", 
+                    cadena,tabla, mult, resp);
+            mult++;
+        }
+        return cadena;
+    }
+    
+    /*
+    En la primera tabla estamos usando un procedimiento y en la segunda estamos
+    usando una funcion para obtener el mismo resultado.
+    */
+    
+    
+    /*
+    public static String obtenerCiudadMayuscula(String m){
         String m2 = m.toUpperCase();
         return m2;
     }
     
-    public static void obtenerMultiplicacion(int tabla, int limite){
-        
-    }
+    
     
     public static String obtenerNombre(){
         return "Luis";
     }
     
-    
+    */
 }
