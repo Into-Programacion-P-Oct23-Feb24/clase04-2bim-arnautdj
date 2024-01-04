@@ -62,6 +62,7 @@ public class Ejemplo042 {
         operacion = x + y + z;
         return operacion;
     }
+    //Se adiciona esta funcion para poder sumar los tres arreglos anteriores
     
     
 }
