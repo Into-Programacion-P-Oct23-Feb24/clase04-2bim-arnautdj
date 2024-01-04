@@ -37,7 +37,8 @@ public class Ejemplo041 {
 
         for (int i = 0; i < primerValor.length; i++) {
             for (int j = 0; j < segundoValor.length; j++) {
-                arreglo3[i][j] = obtenerMultiplicacion(primerValor[i][j], segundoValor[i][j]);
+                arreglo3[i][j] = obtenerMultiplicacion(primerValor[i][j],
+                        segundoValor[i][j]);
                 System.out.printf("%d\t", arreglo3[i][j]);
             }  
             System.out.println("\n");
